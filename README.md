@@ -16,7 +16,7 @@ The stack includes:
 - **Node.js** (for AWS CDK CLI)
 - **Python 3.9+** with `venv`
 
-Install CDK globally if not already :
+## Install CDK globally if not already :
 
 npm install -g aws-cdk
 
@@ -30,28 +30,30 @@ npm install -g aws-cdk
 
 3. Create and activate virtual environment :
     Mac/Linux : python -m venv .venv  
-                source .venv/bin/activate
+
+    source .venv/bin/activate
    
     Windows PowerShell : python -m venv .venv
 
    .venv\Scripts\Activate.ps1   
 
-4. Install dependencies :
+5. Install dependencies :
     pip install -r requirements.txt
 
-5. Bootstrap CDK (first time only) :
+6. Bootstrap CDK (first time only) :
     cdk bootstrap
 
-6. Deploy the stack :
+7. Deploy the stack :
     cdk deploy
 
-7. Cleanup to avoid AWS charges :
+8. Cleanup to avoid AWS charges :
     cdk destroy
 
 ##Outputs
 After deployment, CDK will print:
 ALB DNS Name → use this in a browser to test the service
 S3 Bucket Name → private bucket for static asset storage
+
 
 
 
