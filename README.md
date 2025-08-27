@@ -22,31 +22,29 @@ npm install -g aws-cdk
 
 Setup & Deployment
 
-1. Clone the repository
-   git clone https://github.com/hishilathapa/aws-cdk-infra.git:
-    cd aws-cdk-infra
+1. Clone the repository :
+   git clone https://github.com/hishilathapa/aws-cdk-infra.git   cd aws-cdk-infra
 
-2. Create and activate virtual environment:
-  python -m venv .venv
-  # Mac/Linux:
-  source .venv/bin/activate
-  # Windows PowerShell:
-  .venv\Scripts\Activate.ps1
+2. Create and activate virtual environment :
+     # Mac/Linux : python -m venv .venv   source .venv/bin/activate
+   
+     # Windows PowerShell : python -m venv .venv   .venv\Scripts\Activate.ps1
 
-3. Install dependencies:
+3. Install dependencies :
     pip install -r requirements.txt
 
-4. Bootstrap CDK (first time only):
+4. Bootstrap CDK (first time only) :
     cdk bootstrap
 
-5. Deploy the stack
+5. Deploy the stack :
     cdk deploy
+
+6. Cleanup to avoid AWS charges :
+    cdk destroy
 
 ##Outputs
 After deployment, CDK will print:
 ALB DNS Name → use this in a browser to test the service
 S3 Bucket Name → private bucket for static asset storage
 
-6. Cleanup to avoid AWS charges:
-    cdk destroy
 
