@@ -49,10 +49,11 @@ npm install -g aws-cdk
 8. Cleanup to avoid AWS charges :
     cdk destroy
 
-##Outputs
-After deployment, CDK will print:
+## Outputs
+After deployment, CDK will print :
 ALB DNS Name → use this in a browser to test the service
 S3 Bucket Name → private bucket for static asset storage
+
 
 
 
