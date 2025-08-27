@@ -26,25 +26,28 @@ Setup & Deployment
    git clone https://github.com/hishilathapa/aws-cdk-infra.git   cd aws-cdk-infra
 
 2. Create and activate virtual environment :
-     # Mac/Linux : python -m venv .venv   source .venv/bin/activate
+    Mac/Linux : python -m venv .venv  
+                source .venv/bin/activate
    
-     # Windows PowerShell : python -m venv .venv   .venv\Scripts\Activate.ps1
+    Windows PowerShell : python -m venv .venv
+                        .venv\Scripts\Activate.ps1   
 
-3. Install dependencies :
+4. Install dependencies :
     pip install -r requirements.txt
 
-4. Bootstrap CDK (first time only) :
+5. Bootstrap CDK (first time only) :
     cdk bootstrap
 
-5. Deploy the stack :
+6. Deploy the stack :
     cdk deploy
 
-6. Cleanup to avoid AWS charges :
+7. Cleanup to avoid AWS charges :
     cdk destroy
 
 ##Outputs
 After deployment, CDK will print:
 ALB DNS Name → use this in a browser to test the service
 S3 Bucket Name → private bucket for static asset storage
+
 
 
